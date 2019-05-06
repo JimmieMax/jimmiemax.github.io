@@ -1,0 +1,182 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Jimmie Max"><title>大前端开发知识总结 · Jimmie's Blog</title><meta name="description" content="1.代码管理工具 Git
+Git flow分支命名规则
+
+每次提交必须写明注释，如果是修复Bug，请加上Bug号
+创建特性分支，名称要以feture/开头，加上特性名
+创建发布分支，名称要以release/开头，加上预发布版本号
+创建Bug修复分支，名称要以bugfix/开头，加上Bug号
+创建标签"><meta name="keywords" content="Web developer 前端开发"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.ico" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/avatar.jpeg" style="width:127px;"><h3><a href="/">Jimmie's Blog</a></h3><div class="subtitle"><p>Stay Hungry,Stay Foolish</p></div></div></div><ul class="social-links"> </ul><div class="footer"><span>Jimmie Max©️2019</span></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">Home</a></li><li><a href="/about">About</a></li><li><a href="/archives">Archive</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>大前端开发知识总结</a></h3></div><div class="post-content"><h3 id="1-代码管理工具-Git"><a href="#1-代码管理工具-Git" class="headerlink" title="1.代码管理工具 Git"></a>1.代码管理工具 Git</h3><hr>
+<h3 id="Git-flow"><a href="#Git-flow" class="headerlink" title="Git flow"></a>Git flow</h3><p>分支命名规则</p>
+<ul>
+<li>每次提交必须写明注释，如果是修复Bug，请加上Bug号</li>
+<li>创建特性分支，名称要以feture/开头，加上特性名</li>
+<li>创建发布分支，名称要以release/开头，加上预发布版本号</li>
+<li>创建Bug修复分支，名称要以bugfix/开头，加上Bug号</li>
+<li>创建标签，名称要以tag/开头，加上发布版本号</li>
+<li>合并分支时必须使用–no-ff参数，以保留合并历史轨迹</li>
+</ul>
+<h4 id="Git-commit-规范参考文档"><a href="#Git-commit-规范参考文档" class="headerlink" title="Git commit 规范参考文档"></a>Git commit 规范<a href="http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html" target="_blank" rel="noopener">参考文档</a></h4><p>Header部分只有一行，包括三个字段：type（必需）、scope（可选）和subject（必需）。<br>type:</p>
+<ul>
+<li>feat：新功能（feature）</li>
+<li>fix：修补bug</li>
+<li>docs：文档（documentation）</li>
+<li>style： 格式（不影响代码运行的变动）</li>
+<li>refactor：重构（即不是新增功能，也不是修改bug的代码变动）</li>
+<li>test：增加测试</li>
+<li>chore：构建过程或辅助工具的变动</li>
+</ul>
+<h3 id="2-Front-End-前端"><a href="#2-Front-End-前端" class="headerlink" title="2.Front End 前端"></a>2.Front End 前端</h3><hr>
+<h3 id="前端框架Vue、React、Angular"><a href="#前端框架Vue、React、Angular" class="headerlink" title="前端框架Vue、React、Angular"></a>前端框架Vue、React、Angular</h3><ul>
+<li>Vue+Element</li>
+<li>React+Ant Design</li>
+<li>Angular</li>
+</ul>
+<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><h4 id="Flex-布局参考文档"><a href="#Flex-布局参考文档" class="headerlink" title="Flex 布局参考文档"></a>Flex 布局<a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool" target="_blank" rel="noopener">参考文档</a></h4><p>容器的属性</p>
+<ul>
+<li>flex-direction</li>
+<li>flex-wrap</li>
+<li>flex-flow</li>
+<li>justify-content</li>
+<li>align-items</li>
+<li>align-content</li>
+</ul>
+<h4 id="CSS动画"><a href="#CSS动画" class="headerlink" title="CSS动画"></a>CSS动画</h4><ul>
+<li><p><code>transition</code>: 过渡动画</p>
+<ul>
+<li><code>transition-property</code>: 属性</li>
+<li><code>transition-duration</code>: 间隔</li>
+<li><code>transition-timing-function</code>: 曲线</li>
+<li><code>transition-delay</code>: 延迟</li>
+<li>常用钩子: <code>transitionend</code></li>
+</ul>
+</li>
+<li><p><code>animation / keyframes</code></p>
+<ul>
+<li><code>animation-name</code>: 动画名称，对应<code>@keyframes</code></li>
+<li><code>animation-duration</code>: 间隔</li>
+<li><code>animation-timing-function</code>: 曲线</li>
+<li><code>animation-delay</code>: 延迟</li>
+<li><code>animation-iteration-count</code>: 次数<ul>
+<li><code>infinite</code>: 循环动画</li>
+</ul>
+</li>
+<li><code>animation-direction</code>: 方向<ul>
+<li><code>alternate</code>: 反向播放 </li>
+</ul>
+</li>
+<li><code>animation-fill-mode</code>: 静止模式<ul>
+<li><code>forwards</code>: 停止时，保留最后一帧</li>
+<li><code>backwards</code>: 停止时，回到第一帧</li>
+<li><code>both</code>: 同时运用 <code>forwards / backwards</code></li>
+</ul>
+</li>
+<li>常用钩子: <code>animationend</code></li>
+</ul>
+</li>
+<li><p>动画属性: 尽量使用动画属性进行动画，能拥有较好的性能表现</p>
+<ul>
+<li><code>translate</code></li>
+<li><code>scale</code></li>
+<li><code>rotate</code></li>
+<li><code>skew</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="Javascript"><a href="#Javascript" class="headerlink" title="Javascript"></a>Javascript</h3><h4 id="ES6参考文档"><a href="#ES6参考文档" class="headerlink" title="ES6参考文档"></a>ES6<a href="http://es6.ruanyifeng.com/" target="_blank" rel="noopener">参考文档</a></h4><h4 id="浅拷贝和深拷贝"><a href="#浅拷贝和深拷贝" class="headerlink" title="浅拷贝和深拷贝"></a>浅拷贝和深拷贝</h4><p>栈堆，基本数据类型与引用数据类型;</p>
+<ul>
+<li>基本类型–名值存储在栈内存中</li>
+<li>引用数据类型–名存在栈内存中，值存在于堆内存中，但是栈内存会提供一个引用的地址指向堆内存中的值</li>
+</ul>
+<p>递归实现深拷贝<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepClone</span>(<span class="params">obj</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> objClone = <span class="built_in">Array</span>.isArray(obj)?[]:&#123;&#125;;</span><br><span class="line">    <span class="keyword">if</span>(obj &amp;&amp; <span class="keyword">typeof</span> obj===<span class="string">"object"</span>)&#123;</span><br><span class="line">        <span class="keyword">for</span>(key <span class="keyword">in</span> obj)&#123;</span><br><span class="line">            <span class="keyword">if</span>(obj.hasOwnProperty(key))&#123;</span><br><span class="line">                <span class="comment">//判断ojb子元素是否为对象，如果是，递归复制</span></span><br><span class="line">                <span class="keyword">if</span>(obj[key] &amp;&amp; <span class="keyword">typeof</span> obj[key] ===<span class="string">"object"</span>)&#123;</span><br><span class="line">                    objClone[key] = deepClone(obj[key]);</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    <span class="comment">//如果不是，简单复制</span></span><br><span class="line">                    objClone[key] = obj[key];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> objClone;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> a=[<span class="number">0</span>,<span class="number">1</span>,[<span class="number">2</span>,<span class="number">3</span>],<span class="number">4</span>],</span><br><span class="line">    b=deepClone(a);</span><br><span class="line">a[<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">a[<span class="number">2</span>][<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(a,b);</span><br></pre></td></tr></table></figure></p>
+<h3 id="TypeScript"><a href="#TypeScript" class="headerlink" title="TypeScript"></a>TypeScript</h3><h4 id="TypeScript参考文档"><a href="#TypeScript参考文档" class="headerlink" title="TypeScript参考文档"></a>TypeScript<a href="https://www.tslang.cn/" target="_blank" rel="noopener">参考文档</a></h4><h4 id="Mock"><a href="#Mock" class="headerlink" title="Mock"></a>Mock</h4><p>前后端分离开发 <a href="http://mockjs.com/" target="_blank" rel="noopener">Mock.js参考文档</a></p>
+<h4 id="打包工具📦"><a href="#打包工具📦" class="headerlink" title="打包工具📦"></a>打包工具📦</h4><ol>
+<li>webpack <a href="https://www.webpackjs.com/" target="_blank" rel="noopener">参考文档</a></li>
+<li>parcel <a href="https://www.parceljs.cn/" target="_blank" rel="noopener">参考文档</a></li>
+</ol>
+<h3 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h3><h4 id="从输入-url-到展示的过程"><a href="#从输入-url-到展示的过程" class="headerlink" title="从输入 url 到展示的过程"></a>从输入 url 到展示的过程</h4><ol>
+<li>DNS 解析</li>
+<li>TCP 三次握手</li>
+<li>发送请求，分析 url，设置请求报文(头，主体)</li>
+<li>服务器返回请求的文件 (html)</li>
+<li>浏览器渲染<ul>
+<li>HTML parser –&gt; DOM Tree<ul>
+<li>标记化算法，进行元素状态的标记</li>
+<li>dom 树构建 </li>
+</ul>
+</li>
+<li>CSS parser –&gt; Style Tree<ul>
+<li>解析 css 代码，生成样式树 </li>
+</ul>
+</li>
+<li>attachment –&gt; Render Tree<ul>
+<li>结合 dom树 与 style树，生成渲染树</li>
+</ul>
+</li>
+<li>layout: 布局</li>
+<li>GPU painting: 像素绘制页面</li>
+</ul>
+</li>
+</ol>
+<h4 id="js事件循环机制-Event-Loop"><a href="#js事件循环机制-Event-Loop" class="headerlink" title="js事件循环机制(Event Loop)"></a>js事件循环机制(Event Loop)</h4><ol>
+<li>整体的script(作为第一个宏任务)开始执行的时候，会把所有代码分为两部分：“同步任务”、“异步任务”；</li>
+<li>同步任务会直接进入主线程依次执行；</li>
+<li>异步任务会再分为宏任务和微任务；</li>
+<li>宏任务进入到Event Table中，并在里面注册回调函数，每当指定的事件完成时，Event Table会将这个函数移到Event Queue中；</li>
+<li>微任务也会进入到另一个Event Table中，并在里面注册回调函数，每当指定的事件完成时，Event Table会将这个函数移到Event Queue中；</li>
+<li>当主线程内的任务执行完毕，主线程为空时，会检查微任务的Event Queue，如果有任务，就全部执行，如果没有就执行下一个宏任务；</li>
+<li>上述过程会不断重复，这就是Event Loop事件循环；</li>
+</ol>
+<blockquote>
+<ul>
+<li>宏任务(macro-task)：整体代码script、setTimeOut、setInterval</li>
+<li>微任务(micro-task)：promise.then、promise.nextTick(node)</li>
+</ul>
+</blockquote>
+<h4 id="函数节流和函数防抖"><a href="#函数节流和函数防抖" class="headerlink" title="函数节流和函数防抖"></a>函数节流和函数防抖</h4><blockquote>
+<ul>
+<li>函数节流是指一定时间内js方法只跑一次。比如人的眨眼睛，就是一定时间内眨一次。这是函数节流最形象的解释。</li>
+<li>函数防抖是指频繁触发的情况下，只有足够的空闲时间，才执行代码一次。比如生活中的坐公交，就是一定时间内，如果有人陆续刷卡上车，司机就不会开车。只有别人没刷卡了，司机才开车。</li>
+</ul>
+</blockquote>
+<p>函数节流应用的实际场景，多数在监听页面元素滚动事件的时候会用到。因为滚动事件，是一个高频触发的事件。以下是监听页面元素滚动的示例代码：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 函数节流</span></span><br><span class="line"><span class="keyword">var</span> canRun = <span class="literal">true</span>;</span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">"throttle"</span>).onscroll = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(!canRun)&#123;</span><br><span class="line">        <span class="comment">// 判断是否已空闲，如果在执行中，则直接return</span></span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    canRun = <span class="literal">false</span>;</span><br><span class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"函数节流"</span>);</span><br><span class="line">        canRun = <span class="literal">true</span>;</span><br><span class="line">    &#125;, <span class="number">300</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>函数防抖的应用场景，最常见的就是用户注册时候的手机号码验证和邮箱验证了。只有等用户输入完毕后，前端才需要检查格式是否正确，如果不正确，再弹出提示语。以下还是以页面元素滚动监听的例子，来进行解析：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 函数防抖</span></span><br><span class="line"><span class="keyword">var</span> timer = <span class="literal">false</span>;</span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">"debounce"</span>).onscroll = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    clearTimeout(timer); <span class="comment">// 清除未执行的代码，重置回初始化状态</span></span><br><span class="line"></span><br><span class="line">    timer = setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"函数防抖"</span>);</span><br><span class="line">    &#125;, <span class="number">300</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<h4 id="Web-Worker"><a href="#Web-Worker" class="headerlink" title="Web Worker"></a>Web Worker</h4><p>现代浏览器为JavaScript创造的 多线程环境。可以新建并将部分任务分配到worker线程并行运行，两个线程可 独立运行，互不干扰，可通过自带的 消息机制 相互通信。</p>
+<h3 id="服务端与网络"><a href="#服务端与网络" class="headerlink" title="服务端与网络"></a>服务端与网络</h3><p>常见状态码</p>
+<ul>
+<li>1xx: 接受，继续处理</li>
+<li>200: 成功，并返回数据</li>
+<li>201: 已创建</li>
+<li>202: 已接受</li>
+<li>203: 成为，但未授权</li>
+<li>204: 成功，无内容</li>
+<li>205: 成功，重置内容</li>
+<li>206: 成功，部分内容</li>
+<li>301: 永久移动，重定向</li>
+<li>302: 临时移动，可使用原有URI</li>
+<li>304: 资源未修改，可使用缓存</li>
+<li>305: 需代理访问</li>
+<li>400: 请求语法错误</li>
+<li>401: 要求身份认证</li>
+<li>403: 拒绝请求</li>
+<li>404: 资源不存在</li>
+<li>500: 服务器错误</li>
+</ul>
+<h3 id="安全"><a href="#安全" class="headerlink" title="安全"></a>安全</h3><h4 id="XSS攻击-注入恶意代码"><a href="#XSS攻击-注入恶意代码" class="headerlink" title="XSS攻击: 注入恶意代码"></a>XSS攻击: 注入恶意代码</h4><ul>
+<li>cookie 设置 httpOnly</li>
+<li>转义页面上的输入内容和输出内容</li>
+</ul>
+<h4 id="CSRF-跨站请求伪造，防护"><a href="#CSRF-跨站请求伪造，防护" class="headerlink" title="CSRF: 跨站请求伪造，防护:"></a>CSRF: 跨站请求伪造，防护:</h4><ul>
+<li>get 不修改数据</li>
+<li>不被第三方网站访问到用户的 cookie</li>
+<li>设置白名单，不被第三方网站请求</li>
+<li>请求校验</li>
+</ul>
+<h2 id="3-Back-End"><a href="#3-Back-End" class="headerlink" title="3.Back End"></a>3.Back End</h2><hr>
+<h3 id="Node、Koa、Egg参考文档"><a href="#Node、Koa、Egg参考文档" class="headerlink" title="Node、Koa、Egg参考文档"></a>Node、Koa、Egg<a href="https://eggjs.org/zh-cn/" target="_blank" rel="noopener">参考文档</a></h3><h2 id="4-算法"><a href="#4-算法" class="headerlink" title="4.算法"></a>4.算法</h2><hr>
+<h3 id="基础排序算法"><a href="#基础排序算法" class="headerlink" title="基础排序算法"></a>基础排序算法</h3><p>冒泡排序: 两两比较</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">bubleSort</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> len = arr.length;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> outer = len ; outer &gt;= <span class="number">2</span>; outer--) &#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt;=outer - <span class="number">1</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span>(arr[i] &gt; arr[i + <span class="number">1</span>]) &#123;</span><br><span class="line">                [arr[i],arr[i+<span class="number">1</span>]] = [arr[i+<span class="number">1</span>],arr[i]]</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> arr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="递归运用-斐波那契数列-：-爬楼梯问题"><a href="#递归运用-斐波那契数列-：-爬楼梯问题" class="headerlink" title="递归运用(斐波那契数列)： 爬楼梯问题"></a>递归运用(斐波那契数列)： 爬楼梯问题</h3><p>初始在第一级，到第一级有1种方法(s(1) = 1)，到第二级也只有一种方法(s(2) = 1)， 第三级(s(3) = s(1) + s(2))</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">cStairs</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(n === <span class="number">1</span> || n === <span class="number">2</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> cStairs(n<span class="number">-1</span>) + cStairs(n<span class="number">-2</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Updating…<br><a href="https://github.com/JimmieMax/web-develop-knowledge" target="_blank" rel="noopener">Github项目代码，如果觉得有用请star下哦</a></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2019-02-22</span><i class="fa fa-tag"></i></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" href="http://twitter.com/home?status=,https://jimmiemax.github.io/2019/02/22/大前端开发知识总结/,Jimmie's Blog,大前端开发知识总结,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2019/02/28/3d-model-gltf-collection/" title="3d model gltf collection">Prev</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/2018/11/27/Ubuntu-搭建-pptpd-Vpn/" title="Ubuntu 搭建 pptpd Vpn">Next</a></li></ul></div></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script></body></html>
